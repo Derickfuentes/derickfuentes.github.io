@@ -56,10 +56,18 @@ html{
 body{
     max-width: 1200px;
     margin: 0 auto;
-    
+}
+
+.p1{
+    word-spacing: 2px;
+    background-color:#ffe6ac;
+    padding: 30px;
     
 }
 
+p{
+    line-height: 1.7;
+}
 /* Styling the Navigator Bar */
 
 ul.topnav {
@@ -85,22 +93,42 @@ ul.topnav li a:hover:not(.active) {
     color: #222;
 }
 
-/* Welcome to Three Star Media */
 
-.container{
+  
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+
+/* Welcome to Three Star Media CSS Code */
+
+
+.container1{
     position: relative;
     font:arial;
 }
 
 .text-block{
     position: absolute;
+    color:white;
     background-color:#222;
-    left: 20px;
-    right: 30px;
+    text-decoration: solid;
+    opacity: 0.8;
+    left:100px;
+    right: 100px;
+    bottom: 50px;
+    top:40px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
 }
 
 h1{
-    font-size: 100px;
+    font-size: 86px;
 }
 
 .button{
@@ -117,68 +145,163 @@ h1{
 
 }
 
+
 h2{
     font-size:50px;
+    font-weight: bold;
 }
 
 h3{
     font-size:25px;
+    font-weight: bold;
+}
+
+/* About Us CSS Code */
+
+.float img{
+    padding-top:20px;
+    padding-bottom:30px;
+    height: 250px;
+    width: 450px;
+    float:left;
+    margin-left: 80px;
+    margin-right: 20px;
 }
 
 /* Grid CSS code for Services */
 
-.services {
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap:5px;
-}
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    gap: 10px;
+    text-align: justify;
+  }
+  
+  .grid-box {
+    background-color:#ffe6ac;
+    padding:10px;
 
-.services .web:nth-child(1) {
-    grid-column: 1 / span 3;
     
   }
+  
+  .grid-box:nth-child(1) {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
 
-.team{
-    display:grid;
-    padding: 2rem;
-    grid-template-columns: 300px 1fr;
-    gap: 1rem;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-    font: 500 100%/1.5 system-ui;
-}
+  .grid-box:nth-child(2) {
+  
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+
+  }
+
+  .grid-box:nth-child(3) {
+  grid-column: 1 / span 1;
+    grid-row: 3 / span 2;
+
+  }
+
+  .grid-box:nth-child(4) {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 2;
+
+  }
+
+  .grid-box:nth-child(5) {
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 2;
+
+  }
 
 img {
     max-width:100%;
     height: auto;
 }
 
+.button1{
+    background-color:#222;
+    border: none;
+    color: white;
+    padding: 32px 190px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 15px;
+    cursor: pointer;
+}
 
+.button3{
+    background-color:#222;
+    border: none;
+    color: white;
+    padding: 32px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
 
+/* Our Team Grid CSS Code */
 
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color:#ffe6ac;
+  }
 
+  .grid-item2:nth-child(3){
+    padding-left:10px;
+  grid-column: 2 / 1;
+
+  }
+
+  .grid-item2:nth-child(2){
+
+    padding-left:10px;
+
+  }
+
+  hr{
+      height:1px;
+      border: 1px solid #c78b07;
+      width:570px;
+      
+  }
+
+  
 /* Our Vision Code Structure */
-.container {
+.container2 {
     position: relative;
     font-family: Arial;
 }
         
-        .text-block {
+        .text-block2 {
           position: absolute;
           left:40px;
           top: 10%;
           color: white;
         }
 
-        .learn-more-button{
-      background-color: #112034;
-      color: #c78b07;
-      padding: 30px 30px;
-      border-color: #5d5c48;
-      cursor: pointer;
+     
+
+    .button2{
+        background-color:#222;
+        border:1px solid #ccc;
+        color: white;
+        opacity: 0.9;
+        padding: 32px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 15px 15px;
+        cursor: pointer;
     }
+    
 
 /* Contact Form Code Structure */
 
@@ -206,12 +329,29 @@ img {
     }
     
     
-    .container {
+    .container3 {
       border-radius: 5px;
       padding: 20px;
     }
 
+    /* Location Box CSS Code */
 
+      .grid-container1 {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .grid-item1:nth-child(1){
+    padding-left:10px;
+   
+
+  }
+
+  .grid-item1:nth-child(2){
+
+    padding-left: 40px;
+    
+  }
     /* Hours of Operation Table Code Structure */
    
     table {
@@ -223,8 +363,8 @@ img {
     th {
         background-color: #ffe6ac;
         border: 1px solid black;
-        text-align: left;
-        padding: 8px;
+        text-align: center;
+        padding: 20px;
     }
 
     td{
@@ -238,6 +378,11 @@ img {
     ul.topnav li.right,
     ul.topnav li {float: left;}
 
+    #wrapper{
+        margin-left:auto;
+        margin-right:auto;
+        width:760px;
+    }
     
 }
  
